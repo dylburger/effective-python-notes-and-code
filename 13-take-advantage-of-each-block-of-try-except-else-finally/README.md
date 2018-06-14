@@ -1,0 +1,2 @@
+* Use `try / finally` in combination when you want exceptions to bubble up (so that the client will handle them), but when you need some cleanup code (e.g. closing a file, socket, or other input stream).
+* Use `else` to make it clear which exceptions you will handle in your code, and which will propogate up to the caller. The code within the `else` block will run after the code in `try` succeeds, so you know you haven't generated an exception that will be handled from the code in `try`. The code in the `else` block may propogate an exception up.
