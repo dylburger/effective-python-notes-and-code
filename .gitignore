@@ -1,1 +1,3 @@
 **/nodeids
+*.pyc
+__pycache__
